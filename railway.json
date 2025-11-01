@@ -12,7 +12,8 @@
     "production": {
       "variables": {
         "CI": "false",
-        "GENERATE_SOURCEMAP": "false"
+        "GENERATE_SOURCEMAP": "false",
+        "DISABLE_ESLINT_PLUGIN": "true"
       }
     }
   }

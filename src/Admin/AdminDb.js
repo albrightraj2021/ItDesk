@@ -178,15 +178,15 @@ const AdminDashboard = () => {
         <aside className={`sidebar ${isSidebarOpen ? "" : "closed"}`}>
           <nav>
             <ul>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="#">CRO</a></li>
+              <li><button className="section-toggle">Dashboard</button></li>
+              <li><button className="section-toggle">CRO</button></li>
 
               <li className={`has-children ${openMenus.employee ? "open" : ""}`}>
                 <button className="section-toggle" onClick={() => toggleMenu("employee")}>
                   Employee <span className="caret">▶</span>
                 </button>
                 <ul className="sub">
-                  <li><a href="#">Old Staff Details</a></li>
+                  <li><button className="section-toggle">Old Staff Details</button></li>
                   <li className={`has-children ${openMenus.newStaff ? "open" : ""}`}>
                     <button className="section-toggle" onClick={() => toggleMenu("newStaff")}>
                       New Staff Details <span className="caret">▶</span>
@@ -199,11 +199,11 @@ const AdminDashboard = () => {
                 </ul>
               </li>
 
-              <li><a href="#">Batch Schedule</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Expense</a></li>
-              <li><a href="#">Pending Services</a></li>
-              <li><a href="#">Reports</a></li>
+              <li><button className="section-toggle">Batch Schedule</button></li>
+              <li><button className="section-toggle">Marketing</button></li>
+              <li><button className="section-toggle">Expense</button></li>
+              <li><button className="section-toggle">Pending Services</button></li>
+              <li><button className="section-toggle">Reports</button></li>
             </ul>
           </nav>
         </aside>

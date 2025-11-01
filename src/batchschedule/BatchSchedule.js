@@ -16,7 +16,7 @@ const BatchSchedule = () => {
   });
 
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, checked } = e.target;
     if (name === "days") {
       let newDays = [...formData.days];
       if (checked) newDays.push(value);
