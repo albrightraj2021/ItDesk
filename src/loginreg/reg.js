@@ -29,7 +29,7 @@ const Signup = () => {
     const payload = { username, email, password, role };
 
     try {
-      const res = await fetch(`${process.env.REACT_APP_API_URL || "https://web-production-5b5db.up.railway.app"}/api/users/`, {
+      const res = await fetch("https://web-production-5b5db.up.railway.app/api/users/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
