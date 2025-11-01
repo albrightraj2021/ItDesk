@@ -1,0 +1,109 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .walkin-container {
+    max-width: 1200px;
+   
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    color: #0047ab;
+    text-align: center;
+   margin: 300px;
+   position: relative;
+   bottom: 200px;
+  }
+  
+  .walkin-heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .walkin-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #eef4ff;
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .field label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .field input,
+  .field select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  .field input:hover,
+  .field select:hover {
+    border-color: #0047ab;
+    background-color: #f0f0f0;
+  }
+  
+  .add-btn {
+    padding: 8px 12px;
+    margin-top: 20px;
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .add-btn:hover {
+    background-color: #003366;
+  }
+  
+  .added-rows {
+    margin-top: 30px;
+  }
+  
+  .added-rows table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .added-rows th, .added-rows td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .added-rows th {
+    background-color: #eef4ff;
+    font-weight: 600;
+  }
+  
+  .row-register-btn {
+    padding: 6px 10px;
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .row-register-btn:hover {
+    background-color: #003366;
+  }

@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  z-index: 1100;
+}
+.drop-container{
+  position: relative;
+  bottom: 12px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.burger-btn {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.office-toggle select {
+  width: 150px;
+  position: relative;
+  right: 20px;
+}
+
+/* Hide toggle on desktop */
+@media (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+.header .logo{
+  position: relative;
+  left: 10px;
+  height: 55px;
+  top: 7px;
+}
+
+.header .admin-info {
+  font-size: 15px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.burger-btn {
+  background: none;
+  border: none;
+  color: white;
+}

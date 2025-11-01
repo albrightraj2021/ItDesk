@@ -1,0 +1,132 @@
+PendingService.css
+
+
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  width: 90%;
+  max-width: 1300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.form-heading .icon {
+  font-size: 26px;
+  margin-right: 12px;
+}
+
+.form-heading h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.form-group input,
+.form-group select {
+  padding: 14px 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* 3-column grid */
+.horizontal-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* Submit button spans entire form width */
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 35px;
+  margin: 25px auto 0 auto; /* top margin 25px, auto horizontal */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: block; /* allows margin auto to center it */
+}
+
+
+.submit-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive for tablets and phones */
+@media (max-width: 992px) {
+  .horizontal-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .horizontal-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Existing styles omitted for brevity, just new additions below */
+
+.horizontal-form.full-width {
+  display: block;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-group.full-width select {
+  width: 100%;
+  box-sizing: border-box;
+}

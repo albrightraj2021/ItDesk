@@ -1,0 +1,159 @@
+
+
+    /* 🌟 Container */
+    .register-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+      
+    }
+
+    /* 🌟 Card */
+    .register-card {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      width: 620px;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+      top: 19px;
+    }
+
+    .register-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 45px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 🌟 Title */
+    .title {
+      color: #0b4da2;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 35px;
+      letter-spacing: 0.5px;
+    }
+
+    /* 🌟 Input fields */
+    .register-card input[type="text"],
+    .register-card input[type="email"],
+    .register-card input[type="password"] {
+      width: 100%;
+      padding: 14px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 15px;
+      background-color: #f9fafb;
+      transition: all 0.3s ease;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    .register-card input:focus {
+      border-color: #4a90e2;
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+    }
+
+    /* 🌟 Show password */
+    .show-password {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0 25px;
+      text-align: left;
+      
+      
+    }
+    .show-password #showpass{
+        position: relative;
+        bottom: 100px;
+    }
+
+    /* 🌟 Role group */
+    .role-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .role-group label {
+      background: #f3f6fb;
+      border: 1px solid #e0e6ed;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #333;
+      padding: 10px 0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .role-group input[type="radio"] {
+      margin-right: 6px;
+    }
+
+    .role-group label:hover {
+      background: #e8f1ff;
+      border-color: #4a90e2;
+    }
+
+    /* 🌟 Button */
+    .register-btn {
+      width: 100%;
+      background: #4a90e2;
+      color: #fff;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .register-btn:hover {
+      background: #357ae8;
+      transform: scale(1.02);
+    }
+
+    /* 🌟 Helper text */
+    .helper {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .helper a {
+      color: #4a90e2;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .helper a:hover {
+      text-decoration: underline;
+    }
+
+    /* 🌟 Responsive */
+    @media (max-width: 480px) {
+      .register-card {
+        width: 90%;
+        padding: 35px 25px;
+      }
+
+      .title {
+        font-size: 24px;
+      }
+
+      .role-group {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }

@@ -1,0 +1,34 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  z-index: 1100;
+}
+
+.logo {
+  height: 35px;
+}
+
+.burger-btn {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.office-toggle select {
+  width: 150px;
+}
+
+/* Hide toggle on desktop */
+@media (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+.header .logo{
+  position: relative;
+  left: 10px;
+  height: 55px;
+  top: 10px;
+}

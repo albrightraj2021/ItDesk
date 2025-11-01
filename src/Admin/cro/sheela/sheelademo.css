@@ -1,0 +1,89 @@
+.demo-container {
+    background: #ffffff;
+    color: #0047ab;
+    text-align: center;
+    padding: 30px;
+    font-family: "Segoe UI", sans-serif;
+    max-width: 1200px;
+    margin: 100px;
+    position: relative;
+    left: 160px;
+  }
+  
+  h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+  
+  .demo-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .demo-form input,
+  .demo-form select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #0047ab;
+    border-radius: 6px;
+    width: 160px;
+    color: #000000; /* 🔹 text inside fields is now black */
+    background-color: #ffffff;
+  }
+  
+  .demo-form input::placeholder {
+    color: rgba(0, 0, 0, 0.6); /* 🔹 placeholder slightly faded black */
+  }
+  
+  .add-btn {
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .add-btn:hover {
+    background-color: #003080;
+  }
+  
+  .demo-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+  .demo-table th,
+  .demo-table td {
+    border: 1px solid #0047ab;
+    padding: 8px;
+    font-size: 14px;
+    color: #000000; /* 🔹 table text also black */
+  }
+  
+  .demo-table th {
+    background-color: #0047ab;
+    color: white;
+  }
+  
+  .download-btn {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #0056b3;
+  }

@@ -1,0 +1,90 @@
+.sidebar {
+  width: 250px;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+  z-index: 1030;
+  background-color: #212529; 
+  color: #fff; 
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+/* General text color fix */
+.sidebar * {
+  color: #fff !important; 
+}
+
+.menu-item,
+.submenu-item,
+.nested-submenu {
+  color: #fff !important;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.menu-item:hover,
+.submenu-item:hover,
+.nested-submenu:hover {
+  background-color: #343a40;
+  color: #fff !important;
+}
+
+/* Active link */
+.nav-link.active,
+.nav-link.active:hover {
+  background-color: #0d6efd;
+  color: #fff !important;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu.show {
+  display: block;
+}
+
+.bg-submenu {
+  background-color: #2b2f36;
+  border-radius: 6px;
+}
+
+.arrow {
+  transition: transform 0.3s;
+  color: #fff !important;
+}
+
+.arrow.rotate {
+  transform: rotate(90deg);
+}
+
+/* Overlay for mobile */
+.overlay {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 56px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1020;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
