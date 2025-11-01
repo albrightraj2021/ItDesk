@@ -20,7 +20,7 @@ const BdmActivityTracker = () => {
 
   const fetchActivities = async (month = "") => {
     try {
-      let url = "http://127.0.0.1:8000/api/activities/";
+      let url = "https://web-production-5b5db.up.railway.app/api/activities/";
       if (month) url += `?month=${month}`;
       const res = await axios.get(url);
       setActivities(res.data);
@@ -34,7 +34,7 @@ const BdmActivityTracker = () => {
     if (!type || !autoNo || !cost || !phoneNo) return alert("Fill all fields!");
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/api/activities/", {
+      const res = await axios.post("https://web-production-5b5db.up.railway.app/api/activities/", {
         activity_type: type,
         auto_no: autoNo,
         cost,
@@ -55,7 +55,7 @@ const BdmActivityTracker = () => {
 
   const deleteActivity = async (id) => {
     try {
-      await axios.delete(`http://127.0.0.1:8000/api/activities/${id}/`);
+      await axios.delete(`https://web-production-5b5db.up.railway.app/api/activities/${id}/`);
       setActivities(activities.filter((a) => a.id !== id));
     } catch (err) {
       console.error("Failed to delete activity:", err);

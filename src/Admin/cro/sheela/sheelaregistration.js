@@ -85,7 +85,7 @@ const ASheelaRegistration = () => {
     let otpVerified = false;
     if (discount > discountLimit) {
       try {
-        const otpResponse = await fetch("http://127.0.0.1:8000/send-otp/", {
+        const otpResponse = await fetch("https://web-production-5b5db.up.railway.app/send-otp/", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ discount, course: formData.course }),
@@ -131,7 +131,7 @@ const ASheelaRegistration = () => {
 
     // 🧩 STEP 3: Save data to Django backend
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/sheela-registrations/", {
+      const res = await fetch("https://web-production-5b5db.up.railway.app/api/sheela-registrations/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(entry),

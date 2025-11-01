@@ -16,7 +16,7 @@ const ItWalkin = () => {
 
   const loadData = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/walkins/");
+      const response = await axios.get("https://web-production-5b5db.up.railway.app/api/walkins/");
       setCurrentData(response.data);
     } catch (error) {
       console.error("Error loading data:", error);

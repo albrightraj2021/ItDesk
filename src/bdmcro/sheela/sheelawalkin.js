@@ -43,7 +43,7 @@ function BdmSheelaWalkin() {
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/walkins/", {
+      const response = await fetch("https://web-production-5b5db.up.railway.app/api/walkins/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(row),

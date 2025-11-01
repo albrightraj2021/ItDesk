@@ -11,7 +11,7 @@ const ItRegistrationReport = () => {
   // Fetch all registrations
   const fetchData = async () => {
     try {
-      const url = `http://127.0.0.1:8000/api/sheela-registrations/`;
+      const url = `https://web-production-5b5db.up.railway.app/api/sheela-registrations/`;
       const res = await fetch(url);
       const result = await res.json();
       setData(result);

@@ -51,10 +51,10 @@ const ItDashboard = () => {
 
   const fetchDashboardData = async () => {
     try {
-      const walkinResponse = await axios.get("http://127.0.0.1:8000/api/walkins/");
+      const walkinResponse = await axios.get("https://web-production-5b5db.up.railway.app/api/walkins/");
       const walkins = walkinResponse.data;
       
-      const registrationResponse = await axios.get("http://127.0.0.1:8000/api/sheela-registrations/");
+      const registrationResponse = await axios.get("https://web-production-5b5db.up.railway.app/api/sheela-registrations/");
       const registrations = registrationResponse.data;
       
       const monthNumber = months.indexOf(month) + 1;

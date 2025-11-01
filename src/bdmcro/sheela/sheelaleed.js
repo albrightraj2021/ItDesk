@@ -51,7 +51,7 @@ function BdmSheelaLeed() {
     const filledLeads = leads.filter(lead => Object.values(lead).every(val => val !== ""));
     try {
       for (const lead of filledLeads) {
-        await axios.post("http://127.0.0.1:8000/api/leads/", lead); // backend API
+        await axios.post("https://web-production-5b5db.up.railway.app/api/leads/", lead); // backend API
       }
       alert("✅ Lead details saved successfully to database!");
       setLeads([{ ...initialLead }]);

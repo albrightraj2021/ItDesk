@@ -19,7 +19,7 @@ const ReportLeed = () => {
 
   const loadLeads = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/leads/"); // <-- Your API endpoint
+      const response = await axios.get("https://web-production-5b5db.up.railway.app/api/leads/"); // <-- Your API endpoint
       setLeads(response.data);
     } catch (err) {
       console.error("Error fetching leads:", err);

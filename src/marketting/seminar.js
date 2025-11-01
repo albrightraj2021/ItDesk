@@ -5,7 +5,7 @@ import "./seminar.css";
 // --- Backend API functions ---
 const fetchSeminars = async (setSeminars) => {
   try {
-    const res = await axios.get("http://127.0.0.1:8000/seminars/");
+    const res = await axios.get("https://web-production-5b5db.up.railway.app/seminars/");
     setSeminars(res.data);
   } catch (err) {
     console.error("Failed to fetch seminars", err);
@@ -14,7 +14,7 @@ const fetchSeminars = async (setSeminars) => {
 
 const addSeminarBackend = async (formData, setSeminars, setFormData) => {
   try {
-    const res = await axios.post("http://127.0.0.1:8000/seminars/", formData);
+    const res = await axios.post("https://web-production-5b5db.up.railway.app/seminars/", formData);
     setSeminars(prev => [res.data, ...prev]);
     setFormData({
       date: "",
@@ -33,7 +33,7 @@ const addSeminarBackend = async (formData, setSeminars, setFormData) => {
 
 const deleteSeminar = async (id, setSeminars, seminars) => {
   try {
-    await axios.delete(`http://127.0.0.1:8000/seminars/${id}/`, {
+    await axios.delete(`https://web-production-5b5db.up.railway.app/seminars/${id}/`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('access')}`,
       },
@@ -52,7 +52,7 @@ const uploadSeminarFile = async (file, setFile, fetchSeminars) => {
   formData.append("file", file);
 
   try {
-    await axios.post("http://127.0.0.1:8000/api/seminar-upload/", formData, {
+    await axios.post("https://web-production-5b5db.up.railway.app/api/seminar-upload/", formData, {
       headers: { "Content-Type": "multipart/form-data" },
     });
     alert("File uploaded successfully!");

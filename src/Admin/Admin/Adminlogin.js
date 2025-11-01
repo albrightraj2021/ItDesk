@@ -20,7 +20,7 @@ const AdminLogin = () => {
     if (!formData.role) return alert("Please select your role");
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/login/", {
+      const res = await fetch("https://web-production-5b5db.up.railway.app/api/login/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

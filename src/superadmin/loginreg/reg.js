@@ -30,7 +30,7 @@ const SSignup = () => {
     const payload = { username, email, password, role };
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/users/", {
+      const res = await fetch("https://web-production-5b5db.up.railway.app/api/users/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
